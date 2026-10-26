@@ -11,11 +11,11 @@ This repository only hosts the installer and update files. The app's interface i
    click **More info** → **Run anyway**.
 3. When setup finishes, Soniq opens automatically and appears in the notification area at the bottom right of the taskbar.
 
-**If you were using the portable version before** (running `Soniq.exe` directly): before installing, right-click the Soniq icon in the notification area → **Exit**. Your listening history and settings are kept, and the installed version picks them up.
+**If you were using the portable version before** (running `Soniq.exe` directly): before installing, right-click the Soniq icon in the notification area → **Exit (退出)**. Your listening history and settings are kept, and the installed version picks them up.
 
 ## Updates
 
-The installed version checks for new versions automatically (about every 12 hours), downloads them in the background, and installs them the next time Soniq starts. You can also check manually, update right away, or turn automatic checks off in **Settings → General → Updates**. Soniq only downloads from this page; it never uploads anything.
+The installed version checks for new versions automatically (about every 12 hours), downloads them in the background, and installs them the next time Soniq starts. You can also check manually, update right away, or turn automatic checks off in **Settings (设置) → General (通用) → Updates (更新)**. Soniq only downloads from this page; it never uploads anything.
 
 ## Uninstall
 
