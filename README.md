@@ -6,7 +6,7 @@ Soniq 是一个 Windows 11 托盘小工具：自动识别耳机，估算耳机�
 
 ## 安装
 
-1. 打开右侧的 **Releases**，点最新版本，下载 **`Soniq-win-Setup.exe`**。
+1. 打开右侧的 **Releases**，点最新版本，下载 **`SoniqApp-win-Setup.exe`**。
 2. 双击运行。因为安装包还没有数字签名，Windows 可能会弹出蓝色的「Windows 已保护你的电脑」：
    点 **更多信息** → **仍要运行**。
 3. 安装完成后 Soniq 会自动打开，并出现在任务栏右下角的通知区域。
