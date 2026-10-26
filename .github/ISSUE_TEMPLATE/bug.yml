@@ -1,0 +1,44 @@
+name: 问题反馈 / Bug report
+description: Soniq 出错、显示不对或不好用 / Something went wrong, looks wrong, or is hard to use
+labels: ["测试版反馈 beta-feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        谢谢帮忙测试！中文或英文都可以。请不要贴出你不想公开的信息（这个页面所有人都能看到）。
+        Thanks for testing! Chinese or English is fine. Please don't post anything you'd rather keep private — this page is public.
+  - type: textarea
+    id: what
+    attributes:
+      label: 发生了什么 / What happened
+      description: 看到了什么，你原本期望看到什么 / What you saw, and what you expected instead
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 出问题前在做什么 / What you were doing just before
+      placeholder: 例如：插上耳机后打开了「测量中心」/ e.g. plugged in headphones, then opened the Measurement Center
+  - type: input
+    id: headphones
+    attributes:
+      label: 耳机型号与连接方式 / Headphones and connection
+      placeholder: 例如 AirPods Pro（蓝牙）、Sennheiser IE 200（3.5mm）/ e.g. AirPods Pro (Bluetooth)
+  - type: input
+    id: version
+    attributes:
+      label: Soniq 版本 / Soniq version
+      description: 从软件里点「反馈问题」会自动填好 / Filled in automatically when you open this from Soniq
+  - type: input
+    id: windows
+    attributes:
+      label: Windows 版本 / Windows version
+  - type: markdown
+    attributes:
+      value: |
+        **截图和诊断包很有帮助**：在 Soniq 里打开「设置 → 数据 → 诊断包」，把桌面上的文件拖到下面的框里（诊断包含日志和设置，不含录音）。
+        **Screenshots and the diagnostics file help a lot**: in Soniq, go to Settings (设置) → Data (数据) → Diagnostics (诊断包), then drag the file from your desktop into the box below. It contains logs and settings, no recordings.
+  - type: textarea
+    id: attachments
+    attributes:
+      label: 截图 / 诊断包（可选）/ Screenshots / diagnostics (optional)

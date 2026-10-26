@@ -17,6 +17,15 @@ This repository only hosts the installer and update files. The app's interface i
 
 The installed version checks for new versions automatically (about every 12 hours), downloads them in the background, and installs them the next time Soniq starts. You can also check manually, update right away, or turn automatic checks off in **Settings (设置) → General (通用) → Updates (更新)**. Soniq only downloads from this page; it never uploads anything.
 
+## Feedback / 反馈
+
+Found a problem or have a suggestion? In Soniq, open **How it works & privacy (工作原理与隐私)** and scroll to **Feedback (反馈问题)**, or:
+
+- open an issue here: [New issue](https://github.com/Keeeezy/Soniq-releases/issues/new?template=bug.yml) (public)
+- or email **keezy.1147@gmail.com**
+
+Attaching the diagnostics file (Settings → Data → Diagnostics) helps a lot. Chinese or English is fine.
+
 ## Uninstall
 
 Open Windows **Settings → Apps → Installed apps**, find Soniq, and click **Uninstall**. This also removes Soniq from startup. Your listening history stays in `%LocalAppData%\Soniq` and is not deleted; you can delete that folder yourself if you no longer need it.
