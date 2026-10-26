@@ -1,22 +1,22 @@
-# Soniq 下载
+# Soniq downloads
 
-Soniq 是一个 Windows 11 托盘小工具：自动识别耳机，估算耳机里的实际音量（分贝），按听力标准累计「听了多久、多大声」，在可能伤耳朵时安静地提醒你。所有计算都在你的电脑上完成，不上传任何数据。
+Soniq is a small Windows 11 tray app that looks after your hearing. It recognizes your headphones, estimates how loud the sound in them really is (in decibels), keeps track of how long and how loud you listen against hearing-health standards, and gives you a gentle heads-up when your listening could harm your ears. Everything is calculated on your own computer; no data is ever uploaded.
 
-这里只放安装包和更新文件。
+This repository only hosts the installer and update files. The app's interface is currently in Simplified Chinese.
 
-## 安装
+## Install
 
-1. 打开右侧的 **Releases**，点最新版本，下载 **`SoniqApp-win-Setup.exe`**。
-2. 双击运行。因为安装包还没有数字签名，Windows 可能会弹出蓝色的「Windows 已保护你的电脑」：
-   点 **更多信息** → **仍要运行**。
-3. 安装完成后 Soniq 会自动打开，并出现在任务栏右下角的通知区域。
+1. Open **Releases** on the right, pick the latest version, and download **`SoniqApp-win-Setup.exe`**.
+2. Run it. The installer isn't digitally signed yet, so Windows may show a blue "Windows protected your PC" screen:
+   click **More info** → **Run anyway**.
+3. When setup finishes, Soniq opens automatically and appears in the notification area at the bottom right of the taskbar.
 
-**如果你之前用的是免安装版（直接双击 `Soniq.exe`）**：安装前先在通知区域的 Soniq 图标上右键 → **退出**。你的收听记录和设置会保留，安装版会直接接着用。
+**If you were using the portable version before** (running `Soniq.exe` directly): before installing, right-click the Soniq icon in the notification area → **Exit**. Your listening history and settings are kept, and the installed version picks them up.
 
-## 更新
+## Updates
 
-安装版会自动检查新版本（大约每 12 小时一次），在后台下载，下次启动 Soniq 时自动安装。也可以在 **设置 → 通用 → 更新** 里手动检查、立即更新，或关闭自动检查。
+The installed version checks for new versions automatically (about every 12 hours), downloads them in the background, and installs them the next time Soniq starts. You can also check manually, update right away, or turn automatic checks off in **Settings → General → Updates**. Soniq only downloads from this page; it never uploads anything.
 
-## 卸载
+## Uninstall
 
-在 Windows「设置 → 应用 → 已安装的应用」里找到 Soniq，点卸载。卸载会同时删除开机自启；你的收听记录保存在 `%LocalAppData%\Soniq`，不会被删除，不需要时可以手动删掉这个文件夹。
+Open Windows **Settings → Apps → Installed apps**, find Soniq, and click **Uninstall**. This also removes Soniq from startup. Your listening history stays in `%LocalAppData%\Soniq` and is not deleted; you can delete that folder yourself if you no longer need it.
