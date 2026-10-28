@@ -1,100 +1,113 @@
-# Soniq
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/brand/soniq-logo-dark.svg">
+    <img src="docs/brand/soniq-logo-light.svg" alt="Soniq" height="56">
+  </picture>
+</p>
 
-**English** · [简体中文](README.zh-CN.md)
+<p align="center"><b>English</b> · <a href="README.zh-CN.md">简体中文</a></p>
 
-Soniq is a small Windows app that looks after your hearing while you listen on headphones. It recognizes your headphones, estimates how loud the sound in your ears really is (in decibels), adds up how long and how loud you listen against hearing-health guidelines, and gives you a quiet heads-up before it becomes a problem. Everything is calculated on your own computer — nothing is recorded and nothing is uploaded.
+<p align="center"><img src="docs/art/hero-en.png" alt="Enjoy the music. Keep your hearing. Soniq shows how loud it really is in your headphones." width="100%"></p>
 
-> **Public beta.** Soniq works and is used daily, but it has only been verified on one laptop and two pairs of headphones so far. Your feedback helps a lot — see [Feedback](#feedback). The app's interface is currently in Simplified Chinese; an English interface is on the way.
+<h3 align="center"><a href="https://github.com/Keeeezy/Soniq-releases/releases/latest/download/Soniq-Setup.exe">Download Soniq for free</a></h3>
+<p align="center">Windows 11 · English and 中文 · Public beta</p>
 
-![Soniq overview: live headphone level and 7-day listening dose](docs/screenshots/overview.png)
+<p align="center">
+  <a href="https://github.com/Keeeezy/Soniq-releases/releases/latest"><img alt="Latest version" src="https://img.shields.io/github/v/release/Keeeezy/Soniq-releases?label=version&color=0A84FF"></a>
+  <a href="https://github.com/Keeeezy/Soniq-releases/releases/latest"><img alt="Downloads" src="https://img.shields.io/github/downloads/Keeeezy/Soniq-releases/total?color=0A84FF"></a>
+</p>
 
-## Download
+<br>
 
-1. Open [**Releases**](https://github.com/Keeeezy/Soniq-releases/releases/latest) and download **`Soniq-Setup.exe`** (about 80 MB).
-2. Run it. The installer isn't digitally signed yet, so Windows may show a blue "Windows protected your PC" screen: click **More info** → **Run anyway**.
-3. Choose where to install (or keep the default) and click **Install (安装)**. Soniq starts in the notification area at the bottom right of the taskbar.
+**01 — Know how loud it really is.**
+The volume slider shows a percentage. Your ears hear decibels. Soniq turns what your computer plays into the level that actually reaches your ears, and tells you honestly how sure it is.
 
-![The installer](docs/screenshots/setup-en.png)
+**02 — See your week, not just this moment.**
+Hearing damage adds up quietly. Soniq counts every minute against the WHO safe-listening guideline — 80 dB for 40 hours a week — so you always know how much is left.
 
-**Requirements:** Windows 11, 64-bit. Windows 10 (version 2004 or later) should work but hasn't been tested yet.
+**03 — A quiet nudge, not a nag.**
+When it's been too loud for a while, Soniq lets you know. It waits while you're presenting, gaming or in Do Not Disturb, and it never records a sound.
 
-## What Soniq does
+<br>
 
-**Knows how loud it really is**
-- Reads the level of the sound your computer sends to the headphones (it never records it), combines it with the Windows volume and your headphones' published specifications, and converts it into A-weighted decibels — the unit hearing guidelines use.
-- Built-in data for **260 headphone models** from 29 brands, with sources. Wired models use the manufacturer's sensitivity figures; Bluetooth models are recognized automatically.
-- Every number comes with an honest range (for example "±5 dB"). When there isn't enough data, Soniq says so instead of guessing.
+## Every day, at a glance
 
-**Keeps track of your listening**
-- A listening allowance based on the **WHO / ITU-T H.870** safe-listening standard (80 dB × 40 hours per week); the stricter **NIOSH** standard is optional.
-- History with a calendar, daily details, listening sessions, and which apps the sound came from.
-- Quiet reminders when it has been too loud for a while, when you've used a large part of your weekly allowance, or when it's time for a break. Reminders wait while Do Not Disturb or a full-screen app is on.
-- Optional volume cap per pair of headphones.
+Your listening history on a calendar, with a short summary of each month: how long you listened, how loud, and which days went over.
 
-**Makes it more accurate, if you want**
-- **Measurement Center**: calibrate AirPods with an iPhone's built-in headphone level meter (about ±4 dB), calibrate wired headphones against already-calibrated ones by ear (about ±5 dB), or measure a Bluetooth volume curve with the laptop microphone (experimental).
-- Self-tests that check the measurement chain, and a blind test that checks Soniq's predictions against an iPhone reading.
+<p align="center"><img src="docs/art/history-en.png" alt="History with calendar and monthly summary" width="100%"></p>
 
-![Measurement Center](docs/screenshots/measure.png)
+## Down to the session
 
-**Tools for people who make music** (optional, off by default)
-- Loudness meter following ITU-R BS.1770 / EBU R 128 (momentary, short-term, integrated LUFS, loudness range, true peak), with targets such as Spotify −14 LUFS.
-- 1/3-octave spectrum, stereo correlation and goniometer, and a small floating meter.
+Open any day to see when you listened, which apps the sound came from and how much of your allowance each session used. Export a session as a report with its loudness curve.
 
-![Loudness meter](docs/screenshots/loudness.png)
+<p align="center"><img src="docs/art/day-en.png" alt="A day's timeline, apps and listening sessions" width="100%"></p>
 
-**Also**
-- A diary for ear discomfort (ringing, muffled hearing) with advice on when to see a doctor, and a printable report for the visit.
-- Import headphone listening from Apple Health on iPhone, export to CSV, full backup and restore.
-- Light and dark mode, follows your Windows settings.
+## More precise, when you want it
 
-| History | Sessions and apps |
+Soniq starts with your headphones' published specs — 260 models from 29 brands, each with its source. Want a tighter number? Calibrate AirPods with your iPhone in five minutes, or match wired headphones against a calibrated pair by ear.
+
+<p align="center"><img src="docs/art/measure-en.png" alt="Measurement Center with calibrated headphones" width="100%"></p>
+
+## Made for people who make music
+
+Optional tools for mixing and mastering: a loudness meter following ITU-R BS.1770 / EBU R 128 with targets like Spotify −14 LUFS, a 1/3-octave spectrum, stereo correlation and a floating meter. Off by default.
+
+| | |
 |---|---|
-| ![History](docs/screenshots/history.png) | ![Listening sessions](docs/screenshots/sessions.png) |
+| <img src="docs/art/loudness-en.png" alt="Loudness meter"> | <img src="docs/art/spectrum-en.png" alt="Spectrum and stereo"> |
 
-## How accurate is it?
+## Private by design
 
-Soniq **estimates**, it doesn't measure inside your ear. How close the estimate is depends on how much is known about your headphones and computer:
+- **No recording.** Soniq computes sound *levels* only. It never records, stores or uploads audio.
+- **Your data stays on your computer**, in `%LocalAppData%\Soniq`. No account.
+- **Almost offline:** the only network access is checking this page for updates (you can turn it off) and links you open yourself, like the feedback form.
 
-- **Calibrated** headphones: typically within about ±4–5 dB.
-- **Wired headphones with published sensitivity**, uncalibrated: a wider range, mostly because laptops don't publish how much voltage their headphone jack delivers.
-- **Bluetooth headphones** whose maker doesn't publish a maximum level: Soniq records listening time but doesn't show a decibel number until you calibrate.
+## Honest about accuracy
 
-When unsure, Soniq leans towards the safe side. The point isn't a perfect decibel reading but knowing roughly how much of your hearing allowance you're using, and acting in time.
+Soniq **estimates**; it doesn't measure inside your ear. So every number comes with a range, like “73 dB ±5”.
 
-**Soniq is not a medical device** and can't replace a hearing test.
+- **Calibrated headphones:** usually within about ±4–5 dB.
+- **Wired headphones with published specs:** a wider range, mostly because laptop makers don't publish their headphone jack's output voltage.
+- **Bluetooth headphones without a published maximum level:** Soniq records listening time, and shows decibels once you calibrate.
 
-## Privacy
+When unsure, Soniq leans to the safe side. And it's not a medical device — it doesn't replace a hearing test.
 
-- Soniq only computes sound **levels**. It doesn't record, store or upload any audio.
-- All data stays on your computer, in `%LocalAppData%\Soniq`. No account is needed.
-- The only network access is checking this page for new versions (can be turned off), plus anything you start yourself, like opening the feedback form.
+## Everything else
 
-## Updates
+- **Reminders:** too loud for too long, half or all of your allowance used, time for a break, rest advice after a loud day, quiet hours.
+- **Limits:** an optional volume limit, per pair of headphones if you like.
+- **Health:** an ear discomfort log with advice on when to see a doctor, and a printable report for the visit.
+- **Your data:** import headphone listening from Apple Health on iPhone, export to CSV, full backup and restore.
+- **Hardware:** wired, Bluetooth and USB headphones, including FiiO KA1 / KA3 / KA5 and Moondrop Dawn Pro / Pro 2 adapters.
+- **Feel:** light and dark mode, English and Chinese, a quiet tray icon.
 
-The installed version checks for new versions automatically (about every 12 hours), downloads them in the background, and installs them the next time Soniq starts. You can also check manually, update right away, or turn automatic checks off in **Settings (设置) → General (通用) → Updates (更新)**.
+<sub>Screenshots use sample data.</sub>
 
-## Feedback
+## Install
 
-Found a problem or have a suggestion? In Soniq, open **How it works & privacy (工作原理与隐私)** and scroll to **Feedback (反馈问题)**, or:
+1. Download **[Soniq-Setup.exe](https://github.com/Keeeezy/Soniq-releases/releases/latest/download/Soniq-Setup.exe)** (about 80 MB).
+2. Run it. The installer isn't code-signed yet, so Windows may show “Windows protected your PC”: click **More info → Run anyway**.
+3. Choose where to install and click **Install**. Soniq starts in the notification area of the taskbar.
 
-- open an issue here: [New issue](https://github.com/Keeeezy/Soniq-releases/issues/new?template=bug.yml) (public)
-- or email **keezy.1147@gmail.com**
+Soniq needs Windows 11 (64-bit); Windows 10 version 2004 or later should work but hasn't been tested. It updates itself in the background — you can turn that off in **Settings → General → Updates**. Only the latest version is available for download.
 
-Attaching the diagnostics file (Settings → Data → Diagnostics) helps a lot. It contains logs and settings, no audio. Chinese or English is fine.
-
-## Uninstall
-
-Open Windows **Settings → Apps → Installed apps**, find Soniq, and click **Uninstall**. This also removes Soniq from startup. Your listening history stays in `%LocalAppData%\Soniq` and is not deleted; you can delete that folder yourself if you no longer need it.
-
-## Questions
+## FAQ
 
 **Windows says the installer might be unsafe.** Soniq doesn't have a paid code-signing certificate yet, so Windows doesn't recognize the publisher. Click **More info → Run anyway**.
 
-**Soniq doesn't show a decibel number for my headphones.** Pick your model under **Headphones (耳机)**. If it's a Bluetooth model whose maker doesn't publish its maximum level, Soniq can only record listening time until it's calibrated in the Measurement Center.
+**My headphones don't show a decibel number.** Choose your model on the **Headphones** page. Bluetooth headphones whose maker doesn't publish a maximum level need a quick calibration in the **Measurement Center** first.
 
-**I use the portable version (Soniq.exe).** Quit it from the notification area first, then install. Your history and settings are kept.
+**How do I switch the language?** **Settings → General → Appearance → Language**, then restart Soniq.
 
----
+**How do I uninstall?** Windows **Settings → Apps → Installed apps → Soniq → Uninstall**. Your history stays in `%LocalAppData%\Soniq` until you delete it.
 
-This repository only hosts the installer and update files.
+**I found a bug or have an idea.** In Soniq, open **How it works & privacy → Send feedback**, [open an issue](https://github.com/Keeeezy/Soniq-releases/issues/new?template=bug.yml), or email **keezy.1147@gmail.com**. Attaching the diagnostics package (**Settings → Data & privacy**) helps a lot.
+
+<br>
+
+<h3 align="center">Ready to listen safer?</h3>
+<p align="center"><a href="https://github.com/Keeeezy/Soniq-releases/releases/latest/download/Soniq-Setup.exe"><b>Download Soniq for free</b></a> · Windows 11</p>
+
+<br>
+
+<sub>Soniq is free to download and use. This repository hosts the installer and update files; the source code isn't public.</sub>
